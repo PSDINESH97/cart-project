@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./st.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <a href="#" class="logo">cars</a>
+            <div class="box">
+                <div id="cart-count">0</div>
+               
+            <i class="fa fa-shopping-cart"  aria-hidden="true"></i>
+            </div>
+
+
+            <div class="cart ">
+                <div class="cart-title">cart items</div>
+                <div class="cart-contant">
+
+                    <div id="rem1" class="yy cart-box">
+                     <img src="./benz.jpeg" class="cart-image" alt="">
+                     <div class="details-box">
+
+                        <div class="cart-cars-title">special benz</div>
+                        <div class="price-box">
+
+                            <div class="cart-price">666000.00</div>
+                            <div class="cart-amount">77700000.00</div>
+                        </div>
+                        <input type="number" name="number" value="1"  id="cart-quantity">
+                     </div>
+                     <i class="fa fa-trash" onclick="cartremove()"  aria-hidden="true"></i>
+                    </div>
+
+                    <div id="rem2" class="yy cart-box">
+                        <img src="./benz.jpeg" class="cart-image" alt="">
+                        <div class="details-box">
+   
+                           <div class="cart-cars-title">special benz</div>
+                           <div class="price-box">
+   
+                               <div class="cart-price">₹000000.00</div>
+                               <div class="cart-amount">₹000000.00</div>
+                           </div>
+                           <input type="number" name="number" value="1"  id="cart0-quantity">
+                        </div> 
+                        <i class="fa fa-trash" onclick="removeItems()"  aria-hidden="true"></i>
+                      
+                       </div>
+   
+   
+
+
+
+                </div>
+              <div class="total">
+               <div class="total-title">total</div>
+              <div class="total-price">₹ : 000000.00</div>
+            </div>
+            <button class="btn-buy">place order</button>
+            <button class="total-remove">&times;</button>
+
+            </div> 
+
+        </div>
+    </header>
+    <div class="container">
+    <h2 class="title"> discover the best cars </h2>
+    <div class="shop-contant">
+
+        <div class="car-box">
+            <div class="car-image">
+                <img src="./Audi-cars.JPG" alt="cars" class="audi-car">
+            </div>
+            <h2 class="car-name">audi</h2>
+            <span class="car-price">₹111111.00</span>
+            <i class="fa fa-shopping-cart" id="shopping" aria-hidden="true"></i>
+        </div>
+
+        <div class="car-box">
+            <div class="car-image">
+                <img src="./benz.jpeg" alt="cars" class="audi-car">
+            </div>
+            <h2 class="car-name">benz</h2>
+            <span class="car-price">222222.00</span>
+            <i class="fa fa-shopping-cart" id="shopping" aria-hidden="true"></i>
+        </div>
+
+        <div class="car-box">
+            <div class="car-image">
+                <img src="./hyndai.jpeg" alt="cars" class="audi-car">
+            </div>
+            <h2 class="car-name">hyndai</h2>
+            <span class="car-price">333333.00</span>
+            <i class="fa fa-shopping-cart" id="shopping" aria-hidden="true"></i>
+        </div>
+
+
+        <div class="car-box">
+            <div class="car-image">
+                <img src="./maruthi.jpeg" alt="cars" class="audi-car">
+            </div>
+            <h2 class="car-name">maruthi</h2>
+            <span class="car-price">444444.00</span>
+            <i class="fa fa-shopping-cart" id="shopping" aria-hidden="true"></i>
+        </div>
+
+
+        <div class="car-box">
+            <div class="car-image">
+                <img src="./mini.jpeg" alt="cars" class="audi-car">
+            </div>
+            <h2 class="car-name">mini</h2>
+            <span class="car-price">5555555.00</span>
+            <i class="fa fa-shopping-cart" id="shopping" aria-hidden="true"></i>
+        </div>
+
+
+        <div class="car-box">
+            <div class="car-image">
+                <img src="./skoda.jpeg" alt="cars" class="audi-car">
+            </div>
+            <h2 class="car-name">skoda</h2>
+            <span class="car-price">666666.00</span>
+            <i class="fa fa-shopping-cart" id="shopping" aria-hidden="true"></i>
+        </div>
+
+
+        <div class="car-box">
+            <div class="car-image">
+                <img src="./toyato.jpg" alt="cars" class="audi-car">
+            </div>
+            <h2 class="car-name">toyato</h2>
+            <span class="car-price">777777.00</span>
+            <i class="fa fa-shopping-cart" id="shopping" aria-hidden="true"></i>
+        </div>
+
+
+        <div class="car-box">
+            <div class="car-image">
+                <img src="./vw1.jpeg" alt="cars" class="audi-car">
+            </div>
+            <h2 class="car-name">volkswagan</h2>
+            <span class="car-price">888888.00</span>
+            <i class="fa fa-shopping-cart" id="shopping" aria-hidden="true"></i>
+        </div>
+
+        <div class="car-box">
+            <div class="car-image">
+                <img src="./tata1.jpeg" alt="cars" class="audi-car">
+            </div>
+            <h2 class="car-name">tata</h2>
+            <span class="car-price">999999.00</span>
+            <i class="fa fa-shopping-cart" id="shopping" aria-hidden="true"></i>
+        </div>
+
+
+
+    </div>
+    </div>
+    <script src="./js.js"></script>
+</body>
+</html>
